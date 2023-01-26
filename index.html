@@ -6,17 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=     1.0">
     <title>Document</title>
+    <style>
+        #btn{
+            color: wheat;
+            background-color: crimson;
+            font-size: blue;
+            padding: 8px;
+        }
+        .para{
+            font-size: 18px;
+            color: blue;
+        }
+    </style>
 </head>
 
 <body>
     <button id="btn">Click Me!</button>
     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt cum placeat labore dicta veritatis animi. Ut dicta iste iure eius nemo unde tenetur laudantium, suscipit illo, beatae nesciunt porro?</p>
-    <p class="para">da ksin nki ko mare</p>
+
     <script>
-        document.getElementById("btn").textContent = "please Don't";
-        document.getElementsByClassName("para")[0].textContent = "nothings";
-        document.getElementsByTagName("p")[1].textContent = "no";
-        document.querySelector("p").textContent = "changed by querySelector";
+        var btn = document.getElementById("btn");
+        btn.style.color = "black";
+        btn.style.backgroundColor = "yellow";
+        btn.style.border = "2px solid brown";
+
+        var para = document.getElementsByClassName("para")[0];
+
+        para.style.color = "green";
     </script>
 </body>
 
