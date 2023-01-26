@@ -2,33 +2,31 @@
 <html lang="en">
 
 <head>
-  
+
     <title>Document</title>
     <style>
-        #box{
-            background-color: red;
-            width: 100px;
-            height: 100px;
-            transition: 2s;
-        }
+
     </style>
 </head>
 
-<body>
-    <button id="btn">Click Me!</button>
-    <div id="box">Box</div>
-    <script>
-        var btn = document.getElementById("btn");
-        var box = document.getElementById("box");
 
-        btn.onclick = function()
-        {
-            box.style.transform = "translateX(200px)";
-        }
-        box.onclick = function()
-        {
-            box.style.transform += "scale(2)";
-        }
+<body>
+    <div id="container">
+        First
+        <ul id="linkBox">
+            <li class="link">Link1</li>
+            <li class="link">Link2</li>
+            <li class="link">Link3</li>
+        </ul>
+        Last
+    </div>
+    <script>
+        var linkBox = document.getElementById("linkBox");
+        // document.write(linkBox.parentNode.firstChild.nodeValue);
+        // document.write(linkBox.parentNode.lastChild.nodeValue);
+
+        var link1 = document.getElementsByClassName("link")[0];
+        document.write(link1.nextSibling.nextSibling.nodeName);
     </script>
 </body>
 
