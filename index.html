@@ -2,37 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=     1.0">
+  
     <title>Document</title>
-    <style>
-        #btn{
-            color: wheat;
-            background-color: crimson;
-            font-size: blue;
-            padding: 8px;
-        }
-        .para{
-            font-size: 18px;
-            color: blue;
-        }
-    </style>
 </head>
 
 <body>
-    <button id="btn">Click Me!</button>
-    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt cum placeat labore dicta veritatis animi. Ut dicta iste iure eius nemo unde tenetur laudantium, suscipit illo, beatae nesciunt porro?</p>
-
+    <form action="#" method="post">
+        <h2>Form With DOM</h2>
+        <input type="text" id="email" placeholder="Email" required> <br><br>
+        <input type="password" id="pswd" placeholder="password" required> <br><br>
+        <input type="number" id="age" placeholder="Age" required> <br><br>
+        <input type="submit" id="submit" value="submit">
+    </form>
     <script>
-        var btn = document.getElementById("btn");
-        btn.style.color = "black";
-        btn.style.backgroundColor = "yellow";
-        btn.style.border = "2px solid brown";
+        var email = document.getElementById("email");
+        var pswd = document.getElementById("pswd");
+        var pswd = document.getElementById("age");
+        var submit = document.getElementById("submit");
 
-        var para = document.getElementsByClassName("para")[0];
-
-        para.style.color = "green";
+        submit.onclick = function()
+        {
+            // if(email.value != "" && pswd.value != "")
+            // {
+            //     document.write("Success");
+            // }
+            if(age.value >= 18 && age.value <= 40){
+                document.write("Success");
+            }
+        }
     </script>
 </body>
 
