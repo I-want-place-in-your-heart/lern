@@ -9,10 +9,14 @@
 </head>
 
 <body>
-    <a href="#" id="link1">Click me!</a>
+    <button id="btn">Click Me!</button>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt cum placeat labore dicta veritatis animi. Ut dicta iste iure eius nemo unde tenetur laudantium, suscipit illo, beatae nesciunt porro?</p>
+    <p class="para">da ksin nki ko mare</p>
     <script>
-        var link1 = document.getElementById("link1");
-        console.log(link1.innerHTML);
+        document.getElementById("btn").textContent = "please Don't";
+        document.getElementsByClassName("para")[0].textContent = "nothings";
+        document.getElementsByTagName("p")[1].textContent = "no";
+        document.querySelector("p").textContent = "changed by querySelector";
     </script>
 </body>
 
