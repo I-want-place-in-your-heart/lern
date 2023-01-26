@@ -4,31 +4,30 @@
 <head>
   
     <title>Document</title>
+    <style>
+        #box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            transition: 2s;
+        }
+    </style>
 </head>
 
 <body>
-    <form action="#" method="post">
-        <h2>Form With DOM</h2>
-        <input type="text" id="email" placeholder="Email" required> <br><br>
-        <input type="password" id="pswd" placeholder="password" required> <br><br>
-        <input type="number" id="age" placeholder="Age" required> <br><br>
-        <input type="submit" id="submit" value="submit">
-    </form>
+    <button id="btn">Click Me!</button>
+    <div id="box">Box</div>
     <script>
-        var email = document.getElementById("email");
-        var pswd = document.getElementById("pswd");
-        var pswd = document.getElementById("age");
-        var submit = document.getElementById("submit");
+        var btn = document.getElementById("btn");
+        var box = document.getElementById("box");
 
-        submit.onclick = function()
+        btn.onclick = function()
         {
-            // if(email.value != "" && pswd.value != "")
-            // {
-            //     document.write("Success");
-            // }
-            if(age.value >= 18 && age.value <= 40){
-                document.write("Success");
-            }
+            box.style.transform = "translateX(200px)";
+        }
+        box.onclick = function()
+        {
+            box.style.transform += "scale(2)";
         }
     </script>
 </body>
