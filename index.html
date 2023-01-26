@@ -9,20 +9,10 @@
 </head>
 
 <body>
-
+    <a href="#" id="link1">Click me!</a>
     <script>
-        var car ={
-            color: "Red",
-            model: "2015",
-            price: "3M"
-        }
-        car.model = "2022";
-        var convertedStringFromObj =JSON.stringify(car);
-        console.log(car);
-
-        var convertedObjFormString = JSON.parse(convertedStringFromObj);
-        console.log(convertedStringFromObj);
-        console.log(convertedObjFormString);
+        var link1 = document.getElementById("link1");
+        console.log(link1.innerHTML);
     </script>
 </body>
 
