@@ -16,9 +16,13 @@
             model: "2015",
             price: "3M"
         }
-        console.log(car.model);
-        car.model = "2022"; 
-        console.log(car.model);
+        car.model = "2022";
+        var convertedStringFromObj =JSON.stringify(car);
+        console.log(car);
+
+        var convertedObjFormString = JSON.parse(convertedStringFromObj);
+        console.log(convertedStringFromObj);
+        console.log(convertedObjFormString);
     </script>
 </body>
 
